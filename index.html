@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/29b2526332.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="img/o.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="h-text">
+                        <p>Future Software Artisan</p>
+                        <h1>Hi, I'm <span>Praveenkumar</span><br>from Cuddalore,India</h1>
+                </div>
+            </div>
+        </div>
+<!---------------------------------abt--------------------------------->
+        <div id="about">
+            <div class="Container">
+                <div id="row">
+                    <div class="col-1">
+                        <img src="img/suit.jpeg" class="abtimg">
+                    </div>
+                    <div class="col-2">
+                        <h1 class="subtit">About Me</h1>
+                        <p id="abtme">Passionate developer with a flair for problem-solving and a dedication to crafting efficient, scalable code.<br> 
+                            Proficient in multiple languages, I thrive on turning complex concepts into user-friendly solutions.<br> 
+                            Eager to contribute my skills to innovative projects, I am committed to continuous learning <br>
+                            in this ever-evolving tech landscape.</p>
+
+                        <div class="tabtit">
+                            <p class="tblink skill" onclick="opentab('skills')">Skills</p>
+                            <p class="tblink" onclick="opentab('experience')">Experience</p>
+                            <p class="tblink" onclick="opentab('education')">Education</p>
+                        </div>    
+                        <div class="contents skills1" id="skills">
+                            <ul>
+                                <li><span>Core Java</span><br>Programming language</li>
+                                <li><span>Python Basics</span><br> Programming language</li>
+                                <li><span>SQL</span><br>Datsbase</li>
+                                <li><span>HTML & CSS</span><br>Frontend tools</li>
+                            </ul>
+                        </div>
+                        <div class="contents" id="experience">
+                            <ul>
+                                <li><span>2023-Current</span><br>AI Intern Techy Geeks, Pondicherry</li>
+                            </ul>
+                        </div>
+                        <div class="contents" id="education">
+                            <ul>
+                                <li><span>2020-2024</span><br>B.Tech(AI&DS) from Mahendra Engineering College</li>
+                                <li><span>2019-2020</span><br>HSC from Sri Ramakrishna M.H.S.S</li>
+                                <li><span>2017-2018</span><br>SSLC from Arasunagar M.H.S.S</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<!-----------------------------------Projects-------------------------->
+
+                <div id="projects">
+                    <div class="container">
+                        <h1 class="subtit">Projects</h1>
+                        <div class="projeclist">
+                            <div id="SLD">
+                                <i class="fa-solid fa-hands"></i>
+                                <h2>Sign Language Detection</h2>
+                                <p>Sign Language Detection is a computational task that involves recognizing
+                                     actions from sign languages. It involves recognizing hand gestures and generating 
+                                     text or speech for corresponding hand gestures.</p>
+                                   <a href="https://www.sciencedirect.com/science/article/pii/S2667305321000454">Learn more</a>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-book-atlas"></i>
+                                <h2>Object Detection</h2>
+                                <p>The main aim of object detection is to locate the object via bounding boxes (BBs) 
+                                    and also give the classification of the located objects. </p>
+                                   <a href="https://ieeexplore.ieee.org/abstract/document/8627998">Learn more</a>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <h2>My own Portfolio</h2>
+                                <p>This website is my own portfolio that describes my knowledge in
+                                    the field of Frontend (HTML&CSS).
+                                </p>
+                                   <a href="#header">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  <!----------------------------contact-------------------------------->          
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="conleft">
+                            <h1 class="subtit">Contact Me</h1>
+                            <p class="email"><i class="fa-solid fa-envelope"></i>bpraveenkumar7781@gmail.com</p>
+                            <p class="mob"><i class="fa-solid fa-mobile-retro"></i>6374830654</p>
+                            <div class="socicon">
+                                <a href="https://www.instagram.com/ig.bp_7?igsh=MTAzNGtkaXVzcDF1Zg=="><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://x.com/BPkarthi?t=33myYnuODVeIMhf2eqb5Ag&s=09"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/bpraveenkumarin?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></i></a>
+                            </div>
+                            <a href="img/PRAVEEN KUMAR B.pdf" download="Praveenkumar's CV"  class="but but2">Download CV</a>
+                        </div>
+                        <div class="conright">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <div class="button-cent">
+                                    <button type="submit" class="but but2 margin-auto">Submit</button>
+                                </div>
+                                
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © PraveenKumar B <i class="fa-solid fa-heart"></i></p>
+                </div>
+            </div>
+
+            
+        <script>
+            var tablinks =document.getElementsByClassName("tblink");
+            var tabcontents =document.getElementsByClassName("contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                tablink.classList.remove("skill");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("skills1");
+            }
+            event.currentTarget.classList.add("skill");
+            document.getElementById(tabname).classList.add("skills1");
+        }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbziswLWiQmAPQWoJ4qxpMDEFVhIuGWBU8KQ6W5KW_NAe_rJgQDyOgImRNNWH10r8ci36w/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Submitted successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
